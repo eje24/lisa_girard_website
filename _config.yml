@@ -1,0 +1,12 @@
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
