@@ -3,8 +3,10 @@
 @import "sass-code-highlight/github.scss";
 
 $max-width: 740px;
-$accent: #84a9d3; //#0eb077;
-$accentlight: rgba(101, 207, 181, 0.3);
+// $accent: #84a9d3; $accentlight: rgba(132, 169, 211, 0.3); // blue
+$accent: #4a7c59; $accentlight: rgba(74, 124, 89, 0.25);   // forest green
+
+:root { --accent: #{$accent}; }
 
 // Some CSS taken from https://www.xuningyang.com/
 // basic 
