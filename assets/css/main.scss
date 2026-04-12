@@ -4,9 +4,11 @@
 
 $max-width: 740px;
 // $accent: #84a9d3; $accentlight: rgba(132, 169, 211, 0.3); // blue
-$accent: #4a7c59; $accentlight: rgba(74, 124, 89, 0.25);   // forest green
+// $accent: #4a7c59; $accentlight: rgba(74, 124, 89, 0.25);   // forest green
+// $accent: #4169E1; $accentlight: rgba(74, 124, 89, 0.25);   // royal blue
+$accent: #4A4A4A; $accentlight: #9b9a9a;   // forest green
 
-:root { --accent: #{$accent}; }
+:root { --accent: #{$accent}; --accent-light: #{$accentlight}; }
 
 // Some CSS taken from https://www.xuningyang.com/
 // basic 
@@ -32,6 +34,7 @@ body.dark-mode {
   @extend body;
   background-color: black;
   color: white;
+  --accent: #{$accentlight};
 }
 
 .theorem-box {
@@ -80,12 +83,12 @@ body.dark-mode .theorem-box {
 
 a {
   text-decoration: none;
-  color: $accent;
+  color: var(--accent);
 }
 
 i {
   text-decoration: none;
-  color: $accent;
+  color: var(--accent);
 }
 
 a:hover {
@@ -155,7 +158,7 @@ h4 {
 }
 
 #site-title:hover {
-  color: $accent;
+  color: var(--accent);
 }
 
 .navbar {
@@ -233,7 +236,7 @@ h4 {
 
 .preprint-links a {
   text-decoration: none;
-  color: $accent;
+  color: var(--accent);
   margin-right: 10px;
   font-size: 16px; /* Match the font size of the links to the text */
 }
